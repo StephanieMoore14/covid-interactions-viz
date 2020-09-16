@@ -1,7 +1,9 @@
+.highcharts-container {
+    margin: 0 auto;
+  }
+  
 .highcharts-figure, .highcharts-data-table table {
-    min-width: 320px; 
-    max-width: 800px;
-    margin: 1em auto;
+    margin: 0 auto;
 }
 
 .highcharts-data-table table {
@@ -31,3 +33,33 @@
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
+
+#nav-bar {
+    position: sticky;
+    top:0;
+    z-index:10;
+  }
+  
+  .navbar{
+    background-color: #00ccff;
+    padding: 0 !important;
+    position: fixed;
+    height:90px
+  }
+  
+  .navbar-brand img {
+    height:70px;
+    padding-left : 100px;
+  }
+  
+  .navbar-nav li {
+    padding: 0 10px;
+  }
+  
+  .navbar-nav li a{
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 25px;
+    
+  }
+  
