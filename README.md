@@ -1,4 +1,4 @@
-# DSC106_Final
+# LinkedIn Data Analysis
 
 For this project, I was curious to see if the Warriors' success could be credited to this idea of “Teamwork”.
 
@@ -12,4 +12,4 @@ This idea came partly from domain knowledge and also media observance of the War
 
 ----
 
-The website is hosted [here](https://stephaniemoore14.github.io/DSC106_Final/).
+The website is hosted [here](https://stephaniemoore14.github.io/covid_interactions-viz/).
