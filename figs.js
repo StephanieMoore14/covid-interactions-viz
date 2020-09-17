@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
               
         },
         title: {
-            text: 'Top 5 Cities For Data Scientists'
+            text: 'Top 5 Cities'
         },
         subtitle: {
             text: 'Source: <a href="https://www.LinkedIn.com" target="_blank">LinkedIn.com</a>'
@@ -198,7 +198,10 @@ document.addEventListener('DOMContentLoaded', function () {
             width: 1000,
         },
         title: {
-            text: 'Top 10 Data Science Industries'
+            text: 'Top 9 Titles Similar to Data Science'
+        },
+        subtitle: {
+            text: 'Source: <a href="https://www.LinkedIn.com" target="_blank">LinkedIn.com</a>'
         },
         tooltip: {
             useHTML: true,
@@ -226,6 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         },
+        credits: false,
         series: [{
             data: [{
                     name: 'Data Scientist',
