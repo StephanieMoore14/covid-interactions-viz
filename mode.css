@@ -1,3 +1,7 @@
+h3,p {
+  text-align: center;
+}
+
 .highcharts-container {
     margin: 0 auto;
   }
@@ -62,4 +66,3 @@
     font-size: 25px;
     
   }
-  
