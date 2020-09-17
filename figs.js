@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
             height: '60%',
             width: 1000,
         },
+ 
         title: {
             text: 'Top 5 Industries'
         },
@@ -27,7 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
             title: {
                 text:'Industries'
             },
-            type: 'category'
+            type: 'category',
+            labels: {
+                enabled: true
+            }
         },
         yAxis: {
             title: {
@@ -35,15 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
         legend: {
-            enabled: false
-            // verticalAlign:'top'
+            enabled: true,
         },
         plotOptions: {
             series: {
             borderWidth: 0,
             dataLabels: {
-                enabled: false,
-                format: '{point.y:.2f}'
+                enabled: true,
+                format: '{point.y:.0f}'
             }
             }
         },
@@ -74,8 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             ]
             }
-        ],
-        // 
+        ]
         })
     });
 
@@ -86,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function() {
             selected: 1
         },
         series: mychart1.series // predefined JavaScript array
-    
     });  
 });
 
@@ -96,12 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
             type: 'column',
             height: '60%',
             width: 1000,
-            scales: {
-                xAxes: [{
-                  maxBarThickness: 100,
-                }],
-              }
-              
         },
         title: {
             text: 'Top 5 Cities'
@@ -125,7 +120,10 @@ document.addEventListener('DOMContentLoaded', function () {
             title: {
                 text:'Cities'
             },
-            type: 'category'
+            type: 'category',
+            labels: {
+                enabled: true
+            }
         },
         yAxis: {
             title: {
@@ -133,14 +131,31 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
         legend: {
-            enabled: false
+            enabled: true,
         },
         plotOptions: {
             series: {
             borderWidth: 0,
             dataLabels: {
-                enabled: false,
-                format: '{point.y:.2f}'
+                enabled: true,
+                format: '{point.y:.0f}'
+            }
+            }
+        },
+        yAxis: {
+            title: {
+            text: 'Count'
+            }
+        },
+        legend: {
+            enabled: true
+        },
+        plotOptions: {
+            series: {
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '{point.y:.0f}'
             }
             }
         },
@@ -183,17 +198,15 @@ var chart2; // globally available
                 selected: 1
             },
             series: mychart2.series 
-        
        });  
     });
-    
 
 
 document.addEventListener('DOMContentLoaded', function () {
     var mychart3 = Highcharts.chart('container3', {
         chart: {
             type: 'packedbubble',
-            height: '60%',
+            height: '50%',
             width: 1000,
         },
         title: {
@@ -235,13 +248,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 value: 9855
             }]},
             {
-            
             data: [{
                 name: 'Software Engineer',
                 value: 526
             }]},
             {
-            
             data: [{
                 name: 'Data Engineer',
                 value: 296
@@ -264,13 +275,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }]
             },
             {
-            
             data: [{
                 name: 'Analyst',
                 value: 101
             }]},
             {
-            
             data: [{
                 name: 'Business Analyst',
                 value: 98
@@ -281,7 +290,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 value: 79
             }]},
             {
-            
             data: [{
                 name: 'Software Developer',
                 value: 68
