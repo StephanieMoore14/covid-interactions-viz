@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var mychart1 = Highcharts.chart('container1', {
         chart: {
             type: 'column',
-            height: '40%',
+            height: '60%',
             width: 1000,
-            offset: '33%'
         },
         title: {
             text: 'Top 5 Industries'
@@ -95,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var mychart2 = Highcharts.chart('container2', {
         chart: {
             type: 'column',
-            height: '40%',
+            height: '60%',
             width: 1000,
             scales: {
                 xAxes: [{
@@ -204,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
             text: 'Source: <a href="https://www.LinkedIn.com" target="_blank">LinkedIn.com</a>'
         },
         tooltip: {
-            useHTML: true,
+            useHTML: false,
             pointFormat: '<b>{point.name}:</b> {point.value}</sub>'
         },
         legend: {
