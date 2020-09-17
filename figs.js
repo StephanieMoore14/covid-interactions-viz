@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
             width: 1000,
         },
         title: {
-            text: 'Top 9 Titles Similar to Data Science'
+            text: 'Top 10 Titles Similar to Data Science'
         },
         subtitle: {
             text: 'Source: <a href="https://www.LinkedIn.com" target="_blank">LinkedIn.com</a>'
@@ -259,6 +259,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 value: 115
             }]},
             {
+            data: [{
+                name: 'Product',
+                value: 106
+            }]
+            },
+            {
             
             data: [{
                 name: 'Analyst',
@@ -280,8 +286,8 @@ document.addEventListener('DOMContentLoaded', function () {
             data: [{
                 name: 'Software Developer',
                 value: 68
-            }]}
-            ]
+            }]
+            }]
     });
 });
 
