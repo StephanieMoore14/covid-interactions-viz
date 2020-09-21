@@ -1,13 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
+    var data1 = [
+        {
+        name: "Industries",
+        colorByPoint: true,
+        data: [
+            {
+            name: 'IT & Services',
+            y: 3556,
+            },
+            {
+            name: 'Financial Services',
+            y: 3031,
+            },
+            {
+            name: 'Computer Software',
+            y: 2338,
+            },
+            {
+            name: 'Internet',
+            y: 1886,
+            },
+            {
+            name: 'Higher Education',
+            y: 1877,
+            }
+        ]
+        }
+    ];
+    
     var mychart1 = Highcharts.chart('container1', {
         chart: {
             type: 'column',
             height: '60%',
             width: 1000,
+            marginBottom: 150,
         },
  
         title: {
-            text: 'Top 5 Industries'
+            text: 'Number of Professionals in Top 5 Industries'
         },
         subtitle: {
             text: 'Source: <a href="https://www.linkedin.com/" target="_blank">LinkedIn.com</a>'
@@ -35,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         yAxis: {
             title: {
-            text: 'Count'
+            text: 'Number of Professionals'
             }
         },
         legend: {
@@ -50,34 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             }
         },
-        series: [
-            {
-            name: "Industries",
-            colorByPoint: true,
-            data: [
-                {
-                name: 'Information Technology & Services',
-                y: 3556,
-                },
-                {
-                name: 'Financial Services',
-                y: 3031,
-                },
-                {
-                name: 'Computer Software',
-                y: 2338,
-                },
-                {
-                name: 'Internet',
-                y: 1886,
-                },
-                {
-                name: 'Higher Education',
-                y: 1877,
-                }
-            ]
-            }
-        ]
+        series: data1
         })
     });
 
@@ -92,24 +95,54 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+    var data2 = [
+        {
+        name: "Industries",
+        colorByPoint: true,
+        data: [
+            {
+            name: "San Francisco",
+            y: 3519,
+            },
+            {
+            name: "New York City",
+            y: 2477,
+            },
+            {
+            name: "Boston",
+            y: 1096,
+            },
+            {
+            name: "Austin",
+            y: 787,
+            },
+            {
+            name: "Atlanta",
+            y: 700,
+            }
+        ]
+        }
+    ];
     var mychart2 = Highcharts.chart('container2', {
         chart: {
             type: 'column',
             height: '60%',
             width: 1000,
+            marginBottom: 150,
         },
+ 
         title: {
-            text: 'Top 5 Cities'
+            text: 'Number of Professionals in Top 5 Cities'
         },
         subtitle: {
-            text: 'Source: <a href="https://www.LinkedIn.com" target="_blank">LinkedIn.com</a>'
+            text: 'Source: <a href="https://www.linkedin.com/" target="_blank">LinkedIn.com</a>'
         },
         accessibility: {
             announceNewData: {
             enabled: true
             }
         },
-        colors: ['#ffcc00'],
+        colors: ['#ff9900'],
         exporting: {
             enabled: false
         },
@@ -127,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         yAxis: {
             title: {
-            text: 'Count'
+            text: 'Number of Professionals'
             }
         },
         legend: {
@@ -142,52 +175,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             }
         },
-        yAxis: {
-            title: {
-            text: 'Count'
-            }
-        },
-        legend: {
-            enabled: true
-        },
-        plotOptions: {
-            series: {
-            borderWidth: 0,
-            dataLabels: {
-                enabled: true,
-                format: '{point.y:.0f}'
-            }
-            }
-        },
-        series: [
-            {
-            name: "Industries",
-            colorByPoint: true,
-            data: [
-                {
-                name: "San Francisco",
-                y: 3519,
-                },
-                {
-                name: "New York City",
-                y: 2477,
-                },
-                {
-                name: "Boston",
-                y: 1096,
-                },
-                {
-                name: "Austin",
-                y: 787,
-                },
-                {
-                name: "Atlanta",
-                y: 700,
-                }
-            ]
-            }
-        ],
-        });
+        series: data2
+        })
     });
 
 
@@ -203,14 +192,70 @@ var chart2; // globally available
 
 
 document.addEventListener('DOMContentLoaded', function () {
+    var data3 = [{
+        data: [{
+                name: 'Data Scientist',
+            value: 9855
+        }]},
+        {
+        data: [{
+            name: 'Software Engineer',
+            value: 526
+        }]},
+        {
+        data: [{
+            name: 'Data Engineer',
+            value: 296
+        }]},
+        {
+        data: [{
+                name: 'Machine Learning Engineer',
+            value: 184
+        }]},
+        {
+        
+        data: [{
+            name: 'Engineer',
+            value: 115
+        }]},
+        {
+        data: [{
+            name: 'Product',
+            value: 106
+        }]
+        },
+        {
+        data: [{
+            name: 'Analyst',
+            value: 101
+        }]},
+        {
+        data: [{
+            name: 'Business Analyst',
+            value: 98
+        }]},
+        {
+        data: [{
+            name: 'Business Intelligence Analyst',
+            value: 79
+        }]},
+        {
+        data: [{
+            name: 'Software Developer',
+            value: 68
+        }]
+        }
+    ];
     var mychart3 = Highcharts.chart('container3', {
         chart: {
             type: 'packedbubble',
-            height: '50%',
+            height: '73%',
             width: 1000,
+            marginBottom: 150,
+
         },
         title: {
-            text: 'Top 10 Titles Similar to Data Science'
+            text: 'Top 10 Job Titles in the Data Science Field'
         },
         subtitle: {
             text: 'Source: <a href="https://www.LinkedIn.com" target="_blank">LinkedIn.com</a>'
@@ -242,59 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
         credits: false,
-        series: [{
-            data: [{
-                    name: 'Data Scientist',
-                value: 9855
-            }]},
-            {
-            data: [{
-                name: 'Software Engineer',
-                value: 526
-            }]},
-            {
-            data: [{
-                name: 'Data Engineer',
-                value: 296
-            }]},
-            {
-            data: [{
-                    name: 'Machine Learning Engineer',
-                value: 184
-            }]},
-            {
-            
-            data: [{
-                name: 'Engineer',
-                value: 115
-            }]},
-            {
-            data: [{
-                name: 'Product',
-                value: 106
-            }]
-            },
-            {
-            data: [{
-                name: 'Analyst',
-                value: 101
-            }]},
-            {
-            data: [{
-                name: 'Business Analyst',
-                value: 98
-            }]},
-            {
-            data: [{
-                name: 'Business Intelligence Analyst',
-                value: 79
-            }]},
-            {
-            data: [{
-                name: 'Software Developer',
-                value: 68
-            }]
-            }]
+        series: data3
     });
 });
 
@@ -306,6 +299,5 @@ var chart3; // globally available
                 selected: 1
             },
             series: mychart3.series // predefined JavaScript array
-        
        });  
     });
